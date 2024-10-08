@@ -1828,10 +1828,6 @@ video {
   --tw-bg-opacity: 0.75;
 }
 
-.bg-\[url\(\'\/assets\/fundo_branco\.jpg\'\)\] {
-  background-image: url('/assets/fundo_branco.jpg');
-}
-
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
