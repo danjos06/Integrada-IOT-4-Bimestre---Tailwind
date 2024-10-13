@@ -16,9 +16,10 @@
 
 <body class="bg-cover bg-no-repeat" style="font-family: 'Inter', sans-serif; background-image: url('assets/fundo_branco.jpg');">
 
-    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+    <nav class="p-3 lg:px-24 bg-white/85 shadow md:flex md:items-center md:justify-between">
         <div class="flex justify-between items-center">
-            <span class="text-3xl font-bold cursor-pointer">
+            <span class="lg:text-3xl md:text-xl text-3xl font-bold cursor-pointer duration-300">
+                <img src="assets/daniel-icon.jpg" alt="daniel-icon" class="h-[50px] inline rounded-full">
                 <h1 class="ml-3 inline">Portifólio - Daniel</h1>
             </span>
 
@@ -27,17 +28,26 @@
             </span>
         </div>
 
-        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-            <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl duration-500">Início</a></li>
-            <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl duration-500">Áreas</a></li>
-            <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl duration-500">Extracurriculares</a></li>
-            <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl duration-500">Sobre</a></li>
+        <ul class="md:flex md:items-center md:z-auto md:static absolute md:bg-transparent bg-white w-auto right-0 mr-1 md:w-auto text-right rounded-xl shadow-xl md:shadow-none md:py-0 py-4 md:pl-0 pl-7 pr-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in-out duration-500">
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl duration-500 hover:text-2xl hover:bg-yellow-300 hover:p-1 hover:rounded-lg hover:shadow-lg">Início</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl duration-500 hover:text-2xl hover:bg-yellow-300 hover:p-1 hover:rounded-lg hover:shadow-lg">Áreas</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl duration-500 hover:text-2xl hover:bg-yellow-300 hover:p-1 hover:rounded-lg hover:shadow-lg">Extracurriculares</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl duration-500 hover:text-2xl hover:bg-yellow-300 hover:p-1 hover:rounded-lg hover:shadow-lg">Sobre</a>
+            </li>
         </ul>
     </nav>
 
     <section class="flex align-middle justify-center w-full h-full">
-        <div class="bg-neutral-800 text-white mx-auto my-52 w-96 rounded-xl p-6 shadow-2xl shadow-black">
+        <div class="bg-neutral-200 text-black mx-auto my-52 w-96 rounded-xl p-6 shadow-2xl shadow-black">
             <div>
+                <i class="fa-solid fa-graduation-cap text-yellow-500 text-6xl mb-3"></i>
                 <h2 class="text-2xl font-bold">Bem-vindo(a) ao meu portifólio!</h2>
                 <p class="text-lg mt-4">Apresento neste portifólio uma seleção dos melhores projetos que realizei em 2024 em cada área do conhecimento como estudante de Internet das Coisas (IOT) no Centro Universitário Senac Nações Unidas.</p>
             </div>
@@ -45,7 +55,6 @@
     </section>
 
     <script src="script.js"></script>
-
 </body>
 
 </html>
