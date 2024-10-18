@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./styles/output.css" />
-    <title>Início - Portifólio TW</title>
+    <title>Início / Portifólio - Daniel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -14,37 +14,12 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
-<body class="bg-cover bg-no-repeat" style="font-family: 'Inter', sans-serif; background-image: url('assets/fundo_branco.jpg');">
+<body class="bg-cover bg-no-repeat bg-fixed" style="font-family: 'Inter', sans-serif; background-image: url('assets/fundo_branco.jpg');">
+    
+    <!-- NavBar importada -->
+    <div id="navbar"></div>
 
-    <nav class="p-3 lg:px-24 bg-white/85 shadow md:flex md:items-center md:justify-between">
-        <div class="flex justify-between items-center">
-            <span class="lg:text-3xl md:text-xl text-3xl font-bold cursor-pointer duration-300">
-                <img src="assets/daniel-icon.jpg" alt="daniel-icon" class="h-[50px] inline rounded-full">
-                <h1 class="ml-3 inline">Portifólio - Daniel</h1>
-            </span>
-
-            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-            </span>
-        </div>
-
-        <ul class="md:flex md:items-center md:z-auto md:static absolute md:bg-transparent bg-white w-auto right-0 mr-1 md:w-auto text-right rounded-xl shadow-xl md:shadow-none md:py-0 py-4 md:pl-0 pl-7 pr-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in-out duration-500">
-            <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl duration-500 hover:text-2xl hover:bg-yellow-300 hover:p-1 hover:rounded-lg hover:shadow-lg">Início</a>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl duration-500 hover:text-2xl hover:bg-yellow-300 hover:p-1 hover:rounded-lg hover:shadow-lg">Áreas</a>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl duration-500 hover:text-2xl hover:bg-yellow-300 hover:p-1 hover:rounded-lg hover:shadow-lg">Extracurriculares</a>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl duration-500 hover:text-2xl hover:bg-yellow-300 hover:p-1 hover:rounded-lg hover:shadow-lg">Sobre</a>
-            </li>
-        </ul>
-    </nav>
-
-    <section class="flex align-middle justify-center w-full h-full">
+    <section class="bem-vindo flex align-middle justify-center w-full h-full">
         <div class="bg-neutral-200 text-black mt-[7rem] my-36 w-[370px] md:w-[700px] rounded-xl p-6 shadow-xl flex text-center md:text-left items-center duration-300">
             <div class="md:pr-5">
                 <i class="fa-solid fa-graduation-cap text-yellow-500 text-6xl mb-3"></i>
@@ -67,9 +42,9 @@
                         </div>
                         <div class="card-verso" style="background-image: url('assets/pfp daniel escurecido.jpg');">
                             <i class="fa-solid fa-circle-user" style="color: #ffcf4b; font-size: 50px"></i>
-                            <h1>Daniel Nogueira</h1>
+                            <h1 class="font-semibold">Daniel Nogueira</h1>
                             <p>Estudante no 3° Ano do Ensino Médio Técnico de Internet das Coisas (IOT)</p>
-                            <h3>Saiba mais</h3>
+                            <h3 class="font-bold">Clique para saber mais</h3>
                         </div>
                     </div>
                 </div>
@@ -77,6 +52,24 @@
         </div>
     </section>
 
+    <section class="senac h-auto bg-white shadow-[rgba(234,179,8,0.5)_10px_-3px_10px_0px] relative">
+        <div class="bg-cover bg-center" style="background-image: url('assets/senac-capa.jpeg');">
+            <h2 class="text-3xl font-bold text-center text-white md:text-left md:text-4xl pt-20 pb-4 bg-gradient-to-t from-black to-transparent md:px-24 md:pt-32 md:pb-8 px-3">Sobre o Centro Universitário Senac</h2>
+        </div>
+        <div class="px-5 py-5 md:px-24 md:flex md:justify-center items-center text-center md:text-left">
+            <div>
+                <p class="text-xl text-center md:text-left mb-3 font-semibold">Este é o local onde realizei meu Ensino  Médio Técnico de Internet das Coisas (IOT).</p>
+                <p>A unidade de Santo Amaro do Senac conta com mais de 100 salas e suporta diversos cursos como o meu, além de oferecer uma infraestrutura de ensino de alta qualidade.</p>
+                <button class="bg-yellow-400 p-2 rounded-lg my-3 shadow-lg hover:scale-110 duration-200">Saiba mais sobre o Senac<i class="fa-solid fa-arrow-up-right-from-square pl-2"></i></button>
+            </div>
+            <iframe class="w-full h-64 rounded-xl my-3 shadow-lg md:ml-7" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.171524801555!2d-46.701736323628865!3d-23.66982326558786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce515bb231b5ed%3A0x327b78892baef8e6!2zU2VuYWMgTmHDp8O1ZXMgVW5pZGFz!5e0!3m2!1sen!2sbr!4v1729283976464!5m2!1sen!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer importado -->
+    <div id="footer"></div>
+
+    <script src="components/imports.js"></script>
     <script src="script.js"></script>
 </body>
 
